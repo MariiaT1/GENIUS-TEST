@@ -1,3 +1,46 @@
+/* poppins-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 :root {
     --color-primary-dark: #31261A;
     --color-primary-light: #FAF4EA;
@@ -7,6 +50,14 @@
 
 body {
     color: var(--color-primary-dark);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+address {
+    font-style: normal;
 }
 /* Base */
 ul {
@@ -20,6 +71,7 @@ ul {
     border: 2px solid var(--color-brand-light);
     border-radius: 8px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .button:hover {
@@ -30,15 +82,20 @@ ul {
 /* Link */
 .link {
     color: var(--color-primary-light);
+    text-decoration: none;
 }
 
 .link:hover {
     color: var(--color-brand-light);
+    font-weight: 600;
 }
 
 /* Hero section */
 .hero-title {
    color: var(--color-primary-light);
+   text-align: center;
+   font-size: 128px;
+   font-weight: 900;
 }
 
 .hero-title .accent {
@@ -51,6 +108,66 @@ ul {
     background-color: var(--color-brand-light);
 }
 
+.advantages-item {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.section-title {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.3;
+}
+
 .section-title .accent{
     color: var(--color-brand-dark);
+}
+
+/* Traditions section*/
+.traditions-text .brand {
+    color: var(--color-brand-light);
+    font-weight: 600;
+}
+
+.traditions-text .uppercase {
+   text-transform: uppercase;
+}
+
+/* Chefs section */
+.chef-title {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+/* Formats section */
+.format-title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.format-text {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* Contacts section */
+.contact-text {
+    color: var(--color-brand-dark);
+}
+
+/* Footer */
+.address-link {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--color-primary-light);
+    text-decoration: none;
+}
+
+.address-link:hover {
+    color: var(--color-brand-light);
+}
+
+.address-copyright {
+    color: #A18268;
+    font-size: 14px;
 }
